@@ -62,56 +62,64 @@
 
             <form>
 
-                <p>
-                    <label for="full-name">Full Name</label><br>
-                    <input type="text" id="full-name" name="full-name" required minlength="2" placeholder="e.g. John Kila">
-                </p>
+                <form>
 
-                <p>
-                    <label for="email">Email Address</label><br>
-                    <input type="email" id="email" name="email" required placeholder="e.g. john@example.com">
-                </p>
+    <div class="form-row">
+        <p>
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required minlength="2" placeholder="e.g. John Kila">
+        </p>
 
-                <p>
-                    <label for="phone">Phone Number</label><br>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9\s]{7,15}" placeholder="e.g. 7249 9201" required>
-                </p>
+        <p>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="e.g. john@example.com">
+        </p>
+    </div>
 
-                <p>
-                    <label for="checkin">Check-in Date</label><br>
-                    <input type="date" id="checkin" name="checkin" required>
-                </p>
+    <div class="form-row">
+        <p>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9\s]{7,15}" placeholder="e.g. 7249 9201" required>
+        </p>
 
-                <p>
-                    <label for="checkout">Check-out Date</label><br>
-                    <input type="date" id="checkout" name="checkout" required>
-                </p>
+        <p>
+            <label for="room-type">Preferred Room Type</label>
+            <select id="room-type" name="room-type" required>
+                <option value="">-- Please choose --</option>
+                <option value="single">Standard Single</option>
+                <option value="double">Standard Double</option>
+                <option value="family">Family Room</option>
+                <option value="group">Group Room</option>
+            </select>
+        </p>
+    </div>
 
-                <p>
-                    <label for="guests">Number of Guests</label><br>
-                    <input type="number" id="guests" name="guests" min="1" max="10" value="1" required>
-                </p>
+    <div class="form-row">
+        <p>
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" name="checkin" required>
+        </p>
 
-                <p>
-                    <label for="room-type">Preferred Room Type</label><br>
-                    <select id="room-type" name="room-type" required>
-                        <option value="">-- Please choose --</option>
-                        <option value="single">Standard Single</option>
-                        <option value="double">Standard Double</option>
-                        <option value="family">Family Room</option>
-                        <option value="group">Group Room</option>
-                    </select>
-                </p>
+        <p>
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" name="checkout" required>
+        </p>
 
-                <p>
-                    <label for="message">Additional Message</label><br>
-                    <textarea id="message" name="message" rows="5" maxlength="500" placeholder="Let us know anything else about your stay"></textarea>
-                </p>
+        <p>
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" value="1" required>
+        </p>
+    </div>
 
-                <p>
-                    <button type="submit">Send Enquiry</button>
-                </p>
-            </form>
+    <p>
+        <label for="message">Additional Message</label>
+        <textarea id="message" name="message" rows="5" maxlength="500" placeholder="Let us know anything else about your stay"></textarea>
+    </p>
+
+    <p>
+        <button type="submit">Send Enquiry</button>
+    </p>
+</form>
         </section>
     </main>
 
