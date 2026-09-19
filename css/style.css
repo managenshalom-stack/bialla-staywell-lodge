@@ -262,3 +262,35 @@ textarea { resize: vertical; }
     font-weight: 600;
     color: var(--color-primary-dark);
 }
+/* TABLES (Contact details, Room rates) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    color: var(--color-primary);
+    padding: var(--space-xs) 0;
+    font-size: var(--fs-lg);
+}
+
+th, td {
+    text-align: left;
+    padding: var(--space-sm);
+    border-bottom: 1px solid var(--color-border);
+}
+
+thead th {
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: var(--color-bg);
+}
