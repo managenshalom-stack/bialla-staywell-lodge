@@ -33,3 +33,20 @@ See 'AI-DECLARATION.md' in this repository for full details on how AI assistance
 ## Notes
 This project was developed for educational purposes as part of the IS229 Web Design course, Bachelor of Business in Information Technology, 2026.
 No backend or server-side processing is implemented - the booking form uses HTML5 validation attributes only, as required by the assessment scope.
+## Assessment 3 Updates
+
+This site was extended from the Assessment 2 build into a fully responsive, styled
+website using HTML5 and CSS3. Key additions include:
+
+- A coherent CSS design system using custom properties (colour, typography, spacing)
+- Flexbox layouts for feature cards and form field grouping
+- CSS Grid layouts for the gallery and amenities sections
+- A mobile-first responsive navigation using a CSS checkbox toggle (no JavaScript)
+- Media queries at 600px (tablet) and 900px/1200px (desktop) breakpoints
+- Responsive images using `max-width`, `object-fit`, and `aspect-ratio`
+- Visible focus states on all interactive elements for accessibility
+
+Testing was carried out at mobile (~375px), tablet (~768px), and desktop (~1280px)
+widths, with screenshots saved in `/testing-evidence`. All five pages were re-validated
+using the W3C Markup Validator after these changes, with results saved in
+`/validation-evidence`.
